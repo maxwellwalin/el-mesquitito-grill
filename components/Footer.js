@@ -6,7 +6,7 @@ export default function Footer() {
         <footer>
             <div className="footerCol">
                 <p className="footerColTitle">LOCATION</p>
-                <a href="https://www.google.com/maps/dir//el+mesquitito/@33.6624331,-117.9321591,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x80dcdf2e242ab239:0xf8ace2aa554bf426!2m2!1d-117.8971397!2d33.6623666" target="_blank" rel="noreferrer">
+                <a href="http://maps.apple.com/?q=el+mesquitito+grill+costa+mesa" target="_blank" rel="noreferrer">
                     <p>2590 NEWPORT BLVD</p>
                     <p>SUITE D</p>
                     <p>COSTA MESA, CA 92627</p>
