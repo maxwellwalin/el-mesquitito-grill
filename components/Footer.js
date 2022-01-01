@@ -15,12 +15,12 @@ export default function Footer() {
             <div className="footerCol">
                 <p className="footerColTitle">GET IN TOUCH</p>
                 <a href="tel:9496452226">
-                    <p>PHONE - (949) 645-2226</p>
+                    <p>(949) 645-2226</p>
                 </a>
                 <a href="mailto:elmesquititogrill@gmail.com">
-                    <p>EMAIL - elmesquititogrill@gmail.com</p>
+                    <p>elmesquititogrill@gmail.com</p>
                 </a>
-                <div className='socialIconContainer'>
+                <div className='footerSocialIconContainer'>
                     <a href="https://www.instagram.com/elmesquititogrill/?hl=en" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faInstagram} className='footerSocialIcon footerInstagram'></FontAwesomeIcon>
                     </a>

@@ -98,7 +98,7 @@ header {
         grid-template-columns: 1fr 2fr;
     }
 
-    .socialIconContainer {
+    .headerSocialIconContainer {
         display: none;
     }
 }
@@ -149,33 +149,34 @@ footer {
     color: white;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    font-size: 1.5rem;
 }
 
 .footerColTitle {
     padding-bottom: .3rem;
     border-bottom: 2px solid white;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
     text-align: center;
 }
 
 .footerCol a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
 }
 
 .footerCol p {
     color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
+}
+
+.footerSocialIconContainer {
+    text-align: center;
 }
 
 .footerSocialIcon {
     color: white;
-    height: 3rem!important;
-    width: 3rem!important;
-    margin: 1rem 1rem 0 0;
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem 0.5rem 0 0.5rem;
 }
 
 .footerFacebook:hover {
@@ -194,8 +195,52 @@ footer {
     color: #ff1a1a;
 }
 
+@media only screen and (max-width: 620px) { 
+    footer {  
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .footerCol {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .footerCol a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footerCol p {
+        color: white;
+        text-decoration: none;
+    }
+
+    p.footerColTitle {
+        margin-bottom: 0.25rem;
+        text-decoration: underline;
+        border-bottom: 0 solid white;
+    }
+}
+
+@media only screen and (max-width: 900px) { 
+    footer {  
+        font-size: 1rem;
+        padding: 2rem;
+    }
+
+    p.footerColTitle {
+        margin-bottom: 0.5rem;
+    }
+
+    .footerSocialIcon {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
-/* MENU COMPONENT */
+/* HOME PAGE -> MENU COMPONENT */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .menuContainer {
