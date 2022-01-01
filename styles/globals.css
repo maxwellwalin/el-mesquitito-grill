@@ -34,8 +34,8 @@ header {
 
 .headerSocialIcon {
     color: black;
-    height: 3rem;
-    width: 3rem;
+    height: 3rem!important;
+    width: 3rem!important;
     margin: 0 1rem;
 }
 
@@ -171,8 +171,8 @@ footer {
 
 .footerSocialIcon {
     color: white;
-    height: 3rem;
-    width: 3rem;
+    height: 3rem!important;
+    width: 3rem!important;
     margin: 1rem 1rem 0 0;
 }
 
