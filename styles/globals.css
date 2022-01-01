@@ -13,8 +13,10 @@ html {
     border: 1rem solid black;
 }
 
+/* PAGE CONTENT CONTAINER */
+
 main {
-    margin: 0 10%;
+    margin: 5% 10%;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -25,7 +27,7 @@ header {
     display: grid;
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
@@ -190,4 +192,19 @@ footer {
 
 .footerYelp:hover {
     color: #ff1a1a;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+/* MENU COMPONENT */
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.menuContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.menuImg {
+    width: 100%;
 }
