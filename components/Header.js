@@ -17,7 +17,7 @@ export default function Header() {
             </div>
             <div>
                 <a href="/">
-                    <img src='./images/logo-square.jpg' className="headerLogo" alt='el mesquitito grill logo with authentic mexican grill phrase and black tree imagery' />
+                    <img src='./images/logo-rectangle-bq.jpg' className="headerLogo" alt='el mesquitito grill logo with authentic mexican grill phrase and black tree imagery' />
                 </a>
             </div>
             <nav className='headerNav'>

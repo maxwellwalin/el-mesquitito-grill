@@ -10,7 +10,7 @@
   }
 
 html {
-    border: 1rem solid black;
+    border: 0.5rem solid black;
 }
 
 /* PAGE CONTENT CONTAINER */
@@ -27,7 +27,7 @@ header {
     display: grid;
     width: 100%;
     background-color: white;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid black;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
@@ -59,6 +59,7 @@ header {
 
 .headerLogo {
     width: 20rem;
+    margin: 1rem 0;
 }
 
 .headerNavLink {
@@ -240,7 +241,34 @@ footer {
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
-/* HOME PAGE -> MENU COMPONENT */
+/* NAV COMPONENT */
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.navContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 3rem;
+    width: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 0 25%;
+    font-weight: bolder;
+}
+
+.navContainer a {
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 580px) { 
+    .navContainer {
+        padding: 0 10%;
+    }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+/* MENU PAGE */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .menuContainer {

@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Head from 'next/head';
 import Footer from "./Footer";
+import Nav from "./Nav";
 
 export default function Layout({ children }) {
     return (
@@ -14,6 +15,7 @@ export default function Layout({ children }) {
                 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet" />
             </Head>
             <Header />
+            <Nav />
             <main>{children}</main>
             <Footer />
         </div>
