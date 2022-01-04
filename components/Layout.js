@@ -7,8 +7,8 @@ export default function Layout({ children }) {
     return (
         <div>
             <Head>
-                <title>El Mesquitito Grill</title>
-                <meta name="description" content="El Mesquitito Grill, Costa Mesa's best stop for reasonably priced, authentic mexican food." />
+                <title>El Mesquitito Grill | Mexican Restaurant in Costa Mesa, California</title>
+                <meta name="description" content="El Mesquitito Grill is Costa Mesa, CA's best stop for reasonably priced, authentic, and delicious mexican food." />
                 <link rel="icon" href="/images/logo-square.jpg" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

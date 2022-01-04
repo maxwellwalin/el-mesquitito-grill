@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export default function Hero() {
-    console.log(new Date().getDay())
-
     return (
         <div id='slider'>
             <figure>

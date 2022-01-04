@@ -10,7 +10,6 @@
   }
 
 html {
-    border: 1rem solid black;
 }
 
 /* PAGE CONTENT CONTAINER */
@@ -26,7 +25,7 @@ header {
     display: grid;
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
@@ -250,7 +249,7 @@ footer {
     justify-items: center;
     height: 3rem;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
     padding: 0 25%;
     font-weight: bolder;
 }
@@ -303,7 +302,7 @@ footer {
 }
 
 #slider figure .sliderImg {
-    height: 70vh;
+    height: 80vh;
     background-attachment: fixed;
     background-position-y: bottom;
     background-size: 50%;
@@ -394,12 +393,49 @@ footer {
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
+/* INFO COMPONENT */
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.homepageInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:#a80000;
+    justify-items: center;
+    border-top: 5px solid white;
+    border-bottom: 5px solid black;
+    color: white;
+    text-align: end;
+}
+
+.infoCol {
+    padding: 2rem;
+}
+
+.infoCol a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: start;
+}
+
+.infoCol .infoHours {
+    font-size: 1.5rem;
+}
+
+.infoColTitle {
+    text-align: center;
+    border-bottom: 2px solid white;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
 /* YELP COMPONENT */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .yelpDiv {
     padding: 2rem 0;
-    border-bottom: 1px solid white;
+    border-bottom: 5px solid #a80000;
     background-color: white;
     font-weight: bolder;
 }
