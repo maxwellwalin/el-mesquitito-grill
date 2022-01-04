@@ -39,7 +39,7 @@ export default function Hero() {
                 <div className='sliderImg fourthPromotionImg'>
                     <div />
                     <div className='sliderText'>
-                        <h2>Taco Tuesday 4</h2>
+                        <h2>Monday Madness</h2>
                         <p>Stop by for Taco Tuesday! Get any Carne Asada, Carnitas, Pollo, and Al Pastor tacos for $1.99 each!</p>
                         <div>
                             <button>Order Now</button>
