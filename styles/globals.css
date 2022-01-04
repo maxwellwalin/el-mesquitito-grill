@@ -25,7 +25,7 @@ header {
     display: grid;
     width: 100%;
     background-color: white;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
@@ -142,7 +142,7 @@ header {
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 footer {
-    padding-top: 4rem;
+    padding-top: 2rem;
     display: grid;
     background-color: black;
     color: white;
@@ -412,14 +412,14 @@ footer {
 
 .homepageInfo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color:#a80000;
     justify-items: center;
     border-top: 5px solid white;
     border-bottom: 5px solid black;
     color: white;
     text-align: end;
-    padding: 2rem;
+    padding: 2rem 10%;
 }
 
 .infoCol a {
@@ -440,6 +440,10 @@ footer {
     margin-bottom: .5rem;
 }
 
+a.infoContact p {
+    text-align: center;
+    margin-bottom: .5rem;
+}
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 /* YELP COMPONENT */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/

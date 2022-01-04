@@ -19,6 +19,15 @@ export default function Home() {
           </a>
         </div>
         <div className="infoCol">
+          <p className="infoColTitle">GET IN TOUCH</p>
+          <a href="tel:9496452226" className="infoContact">
+            <p>(949) 645-2226</p>
+          </a>
+          <a href="mailto:elmesquititogrill@gmail.com" className="infoContact">
+            <p>elmesquititogrill@gmail.com</p>
+          </a>
+        </div>
+        <div className="infoCol">
           <p className="infoColTitle">HOURS</p>
           <div className="infoHours">
             <p>MON-SAT: 9 AM - 8 PM</p>
@@ -26,7 +35,6 @@ export default function Home() {
           </div>
         </div>
         <div>
-
         </div>
       </div>
       <Element name='reviews'>

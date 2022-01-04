@@ -7,20 +7,20 @@ export default function Footer() {
 
     const router = useRouter();
     let disappearingStyle
-    let getInTouchSolo
+    let emptyFooter
 
     if (router.pathname === "/") {
         disappearingStyle = {
             display: router.pathname === "/" ? 'none' : 'block',
         }
-        getInTouchSolo = {
-            gridColumnStart: '2'
+        emptyFooter = {
+            paddingTop: '0',
         }
     }
 
     return (
         <>
-            <footer>
+            <footer style={emptyFooter}>
                 <div className="footerCol" style={disappearingStyle}>
                     <p className="footerColTitle">LOCATION</p>
                     <a href="http://maps.apple.com/?q=el+mesquitito+grill+costa+mesa" target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ export default function Footer() {
                         <p>COSTA MESA, CA 92627</p>
                     </a>
                 </div>
-                <div className="footerCol" style={getInTouchSolo}>
+                <div className="footerCol" style={disappearingStyle}>
                     <p className="footerColTitle">GET IN TOUCH</p>
                     <a href="tel:9496452226">
                         <p>(949) 645-2226</p>
