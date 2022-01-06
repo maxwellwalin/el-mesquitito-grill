@@ -6,9 +6,9 @@ export default function Header() {
     const route = useRouter().pathname;
     return (
         <header>
-            <div>
+            <div className="headerLogo">
                 <a href="/">
-                    <img src='./images/logo-rectangle-bq.jpg' className="headerLogo" alt='el mesquitito grill logo with authentic mexican grill phrase and black tree imagery' />
+                    <img src='./images/logo-rectangle-bq.jpg' alt='el mesquitito grill logo with authentic mexican grill phrase and black tree imagery' />
                 </a>
             </div>
             <nav>
@@ -21,10 +21,10 @@ export default function Header() {
                 <a href="http://maps.apple.com/?q=el+mesquitito+grill+costa+mesa" target="_blank" rel="noreferrer">
                     DIRECTIONS
                 </a>
-                <a href="/menu" style={{
+                <a href="/images/menu.pdf" style={{
                     textDecoration: route === '/menu' ? 'underline' : "",
                     textDecorationColor: route === '/menu' ? '#d80000' : "",
-                }}>MENU</a>
+                }} target="_blank" rel='noreferrer'>MENU</a>
                 <a href="/contact" style={{
                     textDecoration: route === '/contact' ? 'underline' : "",
                     textDecorationColor: route === '/contact' ? '#d80000' : "",

@@ -27,10 +27,6 @@ header {
     justify-items: center;
 }
 
-.headerSocialIconContainer {
-    justify-items: start;
-}
-
 .headerSocialIcon {
     color: black;
     height: 2rem!important;
@@ -56,14 +52,15 @@ header {
 
 .headerLogo {
     width: 20rem;
-    margin: 1rem 0;
+    margin: 1rem;
 }
 
 nav {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
     align-items: center;
+    justify-items: end;
     font-weight: bold;
 }
 
@@ -76,22 +73,6 @@ nav a {
 
 nav a:hover {
     border: 1px solid black;
-}
-
-.headerNavLink {
-    font-size: 1.25rem;
-    margin: 0 1rem;
-    color: black;
-    text-decoration: none;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10rem;
-    padding: 1rem;
-    transition: 400ms;
-}
-
-.headerNavLink:hover {
-    color: white;
-    background: #a80000;
 }
 
 #orderNowLink {
@@ -268,53 +249,6 @@ footer {
     .copyright {
         font-size: .75rem;
     }
-}
-
-/*////////////////////////////////////////////////////////////////////////////////////////////*/
-/* NAV COMPONENT */
-/*////////////////////////////////////////////////////////////////////////////////////////////*/
-
-.navContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    height: 3rem;
-    width: 100%;
-    border-bottom: 3px solid black;
-    padding: 0 25%;
-    font-weight: bolder;
-}
-
-.navContainer a {
-    color: black;
-    text-decoration: none;
-}
-
-.navContainer a:hover {
-    text-decoration: underline;
-    text-decoration-color: #d80000;
-}
-
-@media only screen and (max-width: 580px) { 
-    .navContainer {
-        padding: 0 10%;
-    }
-}
-
-/*////////////////////////////////////////////////////////////////////////////////////////////*/
-/* MENU PAGE */
-/*////////////////////////////////////////////////////////////////////////////////////////////*/
-
-.menuContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-.menuImg {
-    width: 100%;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////*/

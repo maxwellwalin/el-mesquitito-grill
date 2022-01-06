@@ -5,7 +5,7 @@ export default function Nav() {
 
     return (
         <div className="navContainer">
-            <a href="/menu" style={{
+            <a href="/images/menu.pdf" style={{
                 textDecoration: route === '/menu' ? 'underline' : "",
                 textDecorationColor: route === '/menu' ? '#d80000' : "",
             }}>MENU</a>
