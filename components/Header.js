@@ -1,6 +1,7 @@
 import { faInstagram, faFacebook, faYelp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRouter } from "next/router"
+import Link from 'next/link'
 
 export default function Header() {
     const route = useRouter().pathname;
@@ -25,14 +26,18 @@ export default function Header() {
                     textDecoration: route === '/menu' ? 'underline' : "",
                     textDecorationColor: route === '/menu' ? '#d80000' : "",
                 }} target="_blank" rel='noreferrer'>MENU</a>
-                <a href="/contact" style={{
-                    textDecoration: route === '/contact' ? 'underline' : "",
-                    textDecorationColor: route === '/contact' ? '#d80000' : "",
-                }}>CONTACT</a>
-                <a href="/faq" style={{
-                    textDecoration: route === '/faq' ? 'underline' : "",
-                    textDecorationColor: route === '/faq' ? '#d80000' : "",
-                }}>FAQ</a>
+                <Link href="/contact" passHref shallow>
+                    <a style={{
+                        textDecoration: route === '/contact' ? 'underline' : "",
+                        textDecorationColor: route === '/contact' ? '#d80000' : "",
+                    }}>CONTACT</a>
+                </Link>
+                <Link href="/faq" passHref shallow>
+                    <a style={{
+                        textDecoration: route === '/faq' ? 'underline' : "",
+                        textDecorationColor: route === '/faq' ? '#d80000' : "",
+                    }}>FAQ</a>
+                </Link>
             </nav>
             <div className='headerIconContainer'>
                 <a href="https://www.instagram.com/elmesquititogrill/?hl=en" target="_blank" rel="noreferrer">
@@ -45,6 +50,6 @@ export default function Header() {
                     <FontAwesomeIcon icon={faYelp} className='headerSocialIcon headerYelp'></FontAwesomeIcon>
                 </a>
             </div>
-        </header>
+        </header >
     )
 }
