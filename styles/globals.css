@@ -10,11 +10,7 @@
   }
 
 html {
-}
-
-/* PAGE CONTENT CONTAINER */
-
-main {
+    border: 3px solid #a80000;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -25,17 +21,20 @@ header {
     display: grid;
     width: 100%;
     background-color: white;
-    border-bottom: 3px solid black;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    border-bottom: 3px solid #a80000;
+    grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
     justify-items: center;
 }
 
+.headerSocialIconContainer {
+    justify-items: start;
+}
+
 .headerSocialIcon {
     color: black;
-    height: 3rem!important;
-    width: 3rem!important;
+    height: 2rem!important;
+    width: 2rem!important;
     margin: 0 1rem;
 }
 
@@ -47,7 +46,7 @@ header {
 
 .headerInstagram:hover {
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    border-radius: 14px;
+    border-radius: 10px;
     color: white;
 }
 
@@ -58,6 +57,25 @@ header {
 .headerLogo {
     width: 20rem;
     margin: 1rem 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+}
+
+nav a:hover {
+    border: 1px solid black;
 }
 
 .headerNavLink {
@@ -77,13 +95,13 @@ header {
 }
 
 #orderNowLink {
-    text-decoration: none;
-    background-color: #a80000;
-    color:white;
+    color: #a80000;
+    border: 2px solid #a80000;
 }
 
 #orderNowLink:hover {
-    background-color: #910000;
+    color:white;
+    background-color: #a80000;
 }
 
 @media only screen and (max-width: 1650px) { 
@@ -149,6 +167,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     font-size: 1.5rem;
+    border-top: 3px solid #a80000;
 }
 
 .footerColTitle {
@@ -196,8 +215,7 @@ footer {
 
 .copyright {
     background-color: black;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.808);
     padding: 1rem;
     grid-column-start: 2;
     grid-row-start: 2;
@@ -413,13 +431,13 @@ footer {
 .homepageInfo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color:#a80000;
+    background-color:black;
     justify-items: center;
-    border-top: 5px solid white;
-    border-bottom: 5px solid black;
     color: white;
     text-align: end;
-    padding: 2rem 10%;
+    padding: 3rem 10%;
+    border-top: 3px solid #a80000;
+    border-bottom: 3px solid #a80000;
 }
 
 .infoCol a {
@@ -450,7 +468,6 @@ a.infoContact p {
 
 .yelpDiv {
     padding: 2rem 0;
-    border-bottom: 5px solid #a80000;
     background-color: white;
     font-weight: bolder;
 }
@@ -459,7 +476,13 @@ a.infoContact p {
 /* CONTACT PAGE */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
-form { max-width:420px; margin:50px auto; }
+form { max-width:420px; margin:2rem auto 3rem auto; }
+
+form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
 
 .feedback-input {
   color:black;

@@ -8,13 +8,17 @@ export default function Footer() {
     const router = useRouter();
     let disappearingStyle
     let emptyFooter
+    let copyrightHome
 
     if (router.pathname === "/") {
         disappearingStyle = {
-            display: router.pathname === "/" ? 'none' : 'block',
+            display: 'none',
         }
         emptyFooter = {
             paddingTop: '0',
+        }
+        copyrightHome = {
+            backgroundColor : '#a80000',
         }
     }
 
@@ -55,8 +59,8 @@ export default function Footer() {
                     <p>SUN: 9 AM - 5 PM</p>
                 </div>
             </footer>
-            <div className="copyright">
-                &copy; Copyright {year} El Mesquitito Grill
+            <div className="copyright" style={copyrightHome}>
+                &copy;{year} El Mesquitito Grill. All Rights Reserved.
             </div>
         </>
     )
