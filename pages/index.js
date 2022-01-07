@@ -5,6 +5,8 @@ export default function Home() {
   return (
     <div>
       <Head>
+        <title>El Mesquitito Grill | Authentic Mexican Food Restaurant in Costa Mesa, California</title>
+        <meta name="description" content="El Mesquitito Grill is Costa Mesa, CA's best stop for reasonably priced, authentic, and delicious mexican food." />
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       </Head>
       <Hero />
