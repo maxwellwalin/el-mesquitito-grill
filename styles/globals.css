@@ -88,53 +88,32 @@ nav a:hover {
 
 @media only screen and (max-width: 1650px) { 
     header {  
-        grid-template-columns: 1fr 1fr 2fr;
-    }
-}
-
-@media only screen and (max-width: 1160px) { 
-    header {  
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 3fr;
     }
 
     .headerSocialIconContainer {
         display: none;
     }
+
+    nav {
+        justify-items: center;
+    }
 }
 
-@media only screen and (max-width: 890px) { 
+@media only screen and (max-width: 1005px) { 
     header {  
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: auto auto;
+        padding-bottom: 1rem;
     }
 
     .headerLogo {
-        grid-row-start: 1;
-    }
-
-    .headerNav {
-        grid-row-start: 2;
+        text-align: center;
     }
 }
 
-@media only screen and (max-width: 580px) { 
-    header {  
-        grid-template-rows: 3fr 1fr;
-    }
-
-    .headerNavLink {
-        font-size: 1rem;
-        margin: 0 0.5rem;
-        padding: 0.5rem;
-    }
-}
-
-@media only screen and (max-width: 415px) { 
-    .headerNavLink {
-        font-size: .9rem;
-        margin: 0 0.25rem;
-        padding: 0.5rem;
-    }
+@media only screen and (max-width: 690px) { 
+    
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -239,11 +218,6 @@ footer {
 
     p.footerColTitle {
         margin-bottom: 0.5rem;
-    }
-
-    .footerSocialIcon {
-        height: 2rem!important;
-        width: 2rem!important;
     }
 
     .copyright {

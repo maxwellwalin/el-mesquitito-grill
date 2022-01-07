@@ -39,7 +39,7 @@ export default function Header() {
                     }}>FAQ</a>
                 </Link>
             </nav>
-            <div className='headerIconContainer'>
+            <div className='headerSocialIconContainer'>
                 <a href="https://www.instagram.com/elmesquititogrill/?hl=en" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faInstagram} className='headerSocialIcon headerInstagram'></FontAwesomeIcon>
                 </a>
