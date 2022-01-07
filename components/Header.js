@@ -1,10 +1,23 @@
 import { faInstagram, faFacebook, faYelp } from '@fortawesome/free-brands-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRouter } from "next/router"
 import Link from 'next/link'
+import { useState } from 'react';
 
 export default function Header() {
     const route = useRouter().pathname;
+
+    const [responsiveClass, setResponsiveClass] = useState(null)
+
+    function openResponsiveNav() {
+        if (responsiveClass === null) {
+            setResponsiveClass('responsive')
+        } else {
+            setResponsiveClass(null)
+        }
+    }
+
     return (
         <header>
             <div className="headerLogo">
@@ -12,7 +25,8 @@ export default function Header() {
                     <img src='./images/logo-rectangle-bq.jpg' alt='el mesquitito grill logo with authentic mexican grill phrase and black tree imagery' />
                 </a>
             </div>
-            <nav>
+            <nav className={responsiveClass}>
+                <FontAwesomeIcon icon={faBars} className='hamburgerStack' onClick={openResponsiveNav}></FontAwesomeIcon>
                 <a href="/order" id="orderNowLink">
                     ORDER ONLINE
                 </a>

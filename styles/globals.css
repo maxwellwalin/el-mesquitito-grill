@@ -86,6 +86,12 @@ nav a:hover {
     background-color: #a80000;
 }
 
+.hamburgerStack {
+    display: none;
+    color: black;
+    height: 2rem;
+}
+
 @media only screen and (max-width: 1650px) { 
     header {  
         grid-template-columns: 1fr 3fr;
@@ -104,16 +110,64 @@ nav a:hover {
     header {  
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-        padding-bottom: 1rem;
     }
 
     .headerLogo {
         text-align: center;
     }
+
+    nav {
+        margin-bottom: 1rem;
+    }
 }
 
-@media only screen and (max-width: 690px) { 
-    
+@media screen and (max-width: 690px) { 
+    nav {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    nav a:not(:first-child):not(:nth-child(2)) {
+        display: none;
+    }
+
+    .hamburgerStack {
+        display: block;
+        justify-self: start;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    nav.responsive {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-bottom: 0;
+    }
+
+    nav.responsive a:nth-child(3) {
+        display: block;
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    nav.responsive a:nth-child(4) {
+        display: block;
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+    nav.responsive a:nth-child(5) {
+        display: block;
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+    nav.responsive a:nth-child(6) {
+        display: block;
+        grid-column-start: 2;
+        grid-row-start: 5;
+    }
+    nav.responsive a:nth-child(7) {
+        display: block;
+        grid-column-start: 2;
+        grid-row-start: 6;
+    }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -370,6 +424,46 @@ a.infoContact p {
     text-align: center;
     margin-bottom: .5rem;
 }
+
+@media only screen and (max-width: 690px) { 
+    .homepageInfo {  
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .infoCol {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .infoCol a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .infoCol p {
+        color: white;
+        text-decoration: none;
+    }
+
+    p.infoColTitle {
+        margin-bottom: 0.25rem;
+        text-decoration: underline;
+        border-bottom: 0 solid white;
+    }
+}
+
+@media only screen and (max-width: 900px) { 
+    .homepageInfo {  
+        font-size: 1rem;
+        padding-top: 2rem;
+    }
+
+    p.infoColTitle {
+        margin-bottom: 0.5rem;
+    }
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 /* YELP COMPONENT */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -430,16 +524,26 @@ textarea {
 }
 [type="submit"]:hover { background:#8f0000; }
 
+@media screen and (max-width: 480px) {
+    form { max-width: 325px; }
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 /* FAQ PAGE */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .faqContainer {
-    min-height: 45vh;
-    margin: 2rem 30%;
+    max-width: 60%;
+    margin: 2rem auto;
 }
 
 .faqContainer h1 {
     text-align: center;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .faqContainer {
+        max-width: 75%;
+    }
 }

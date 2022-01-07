@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>El Mesquitito Grill | Authentic Mexican Food Restaurant in Costa Mesa, California</title>
         <meta name="description" content="El Mesquitito Grill is Costa Mesa, CA's best stop for reasonably priced, authentic, and delicious mexican food." />
@@ -35,10 +35,8 @@ export default function Home() {
             <p>SUN: 9 AM - 5 PM</p>
           </div>
         </div>
-        <div>
-        </div>
       </div>
-      <div className="elfsight-app-63057ee3-1444-420a-882e-55e79be0c228 yelpDiv"></div>
-    </div>
+      <div className="elfsight-app-63057ee3-1444-420a-882e-55e79be0c228 yelpDiv" />
+    </>
   )
 }
