@@ -1,4 +1,3 @@
-import { Element } from "react-scroll"
 import Hero from "../components/Hero"
 import Head from 'next/head'
 
@@ -6,9 +5,6 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>El Mesquitito Grill | Authentic Mexican Food Restaurant in Costa Mesa, California</title>
-        <meta name="description" content="El Mesquitito Grill is Costa Mesa, CA's best stop for reasonably priced, authentic, and delicious mexican food." />
-        <meta name="og:description" content="El Mesquitito Grill is Costa Mesa, CA's best stop for reasonably priced, authentic, and delicious mexican food." />
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       </Head>
       <Hero />
@@ -40,9 +36,7 @@ export default function Home() {
         <div>
         </div>
       </div>
-      <Element name='reviews'>
-        <div className="elfsight-app-63057ee3-1444-420a-882e-55e79be0c228 yelpDiv"></div>
-      </Element>
+      <div className="elfsight-app-63057ee3-1444-420a-882e-55e79be0c228 yelpDiv"></div>
     </div>
   )
 }

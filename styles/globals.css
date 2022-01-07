@@ -412,10 +412,9 @@ a.infoContact p {
 
 form { max-width:420px; margin:2rem auto 3rem auto; }
 
-form h2 {
+form h1 {
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 2rem;
 }
 
 .feedback-input {
@@ -462,11 +461,11 @@ textarea {
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .faqContainer {
-    min-height: 39.7vh;
-    margin: 2% 30%;
+    min-height: 45vh;
+    margin: 2rem 30%;
 }
 
 .faqContainer h1 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }

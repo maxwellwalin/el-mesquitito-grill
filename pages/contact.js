@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
         <form>
-            <h2>Get In Touch</h2>
+            <h1>Get In Touch</h1>
             <input name="name" type="text" className="feedback-input" placeholder="Name" required />
             <input name="email" type="email" className="feedback-input" placeholder="Email" required />
             <select name="category" type="text" className="feedback-input" required>
