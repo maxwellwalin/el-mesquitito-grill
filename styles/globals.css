@@ -283,76 +283,67 @@ footer {
 /* HERO COMPONENT */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#slider {
-    overflow: hidden;
-}
-
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
-
-#slider figure .sliderImg {
+.sliderImg {
     height: 80vh;
-    background-attachment: fixed;
     background-position-y: bottom;
+    background-position-x: start;
     background-size: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: start;
+    justify-items: center;
     align-items: center;
-    width: 20%;
-    float: left;
     color: white;
     font-weight: bolder;
 }
 
-#slider figure .sliderImg div h2 {
-    font-size: 6rem;
+.sliderImg div h2 {
+    font-weight: bolder;
+    font-size: 3rem;
 }
 
-#slider figure .sliderImg .sliderText {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 0 2rem 2rem;
-    margin-top: 5rem;
+.sliderImg .sliderText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 100%;
+    height: 40%;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.7);
 }
 
-#slider figure .sliderImg div p {
-    font-size: 2.5rem;
+.sliderImg div p {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
-#slider figure .sliderImg div div button {
-    font-size: 1.25rem;
-    padding: 0.5rem;
-    margin: 2rem 2rem 0 0;
+.sliderImg div div a {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     color: white;
     background: #a80000;
+    text-decoration: none;
 }
 
-#slider figure .sliderImg div div button:hover {
+.sliderImg div div a:hover {
     transition: 400ms;
     cursor: pointer;
-    background: #7a0000;
+    background: #8d0000;
 }
 
-#slider figure .tacoTuesdayImg {
+.tacoTuesdayImg {
     background-image: url('https://dailytaco.com/wp-content/uploads/2021/11/Home-Tacos-1024x683.jpg');
 }
 
-#slider figure .happyHourImg {
+.happyHourImg {
     background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/USe0z9dejT2Ht1APMc6sgw/o.jpg');
 }
 
-#slider figure .sundayBrunchImg {
+.sundayBrunchImg {
     background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/wMorUD3lTmf7cgmX8X4XPA/o.jpg');
 }
 
-#slider figure .fourthPromotionImg {
+.fourthPromotionImg {
     background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/JDCgYj6LkFAsuXFYBSq6Cg/o.jpg');
 }
 
@@ -383,6 +374,32 @@ footer {
     }
     100% {
         left: -400%;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .sliderImg {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0 1fr;
+        background-size: 100%;
+    }
+
+    .sliderImg .sliderText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: fit-content;
+        padding: 1rem 2rem 2rem 2rem;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .sliderImg .sliderText h2 {
+        font-size: 2.25rem;
+    }
+
+    .sliderImg .sliderText p {
+        font-size: 1.25rem;
     }
 }
 
