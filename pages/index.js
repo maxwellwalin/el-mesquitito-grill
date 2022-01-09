@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <Hero />
       <HomepageInfo />
-      <div className="yelpDiv elfsight-app-63057ee3-1444-420a-882e-55e79be0c228" />
+      <div className="elfsight-app-63057ee3-1444-420a-882e-55e79be0c228 yelpDiv" />
     </>
   )
 }
