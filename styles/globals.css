@@ -66,24 +66,30 @@ nav {
 
 nav a {
     color: black;
+    font-size: 1.2rem;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border: 1px solid white;
+    transition: 400ms;
 }
 
 nav a:hover {
     color: black;
     border: 1px solid black;
+    transition: 400ms;
 }
 
 #orderNowLink {
-    color: #a80000;
+    background-color: #a80000;
+    color: white;
     border: 2px solid #a80000;
+    transition: 400ms;
 }
 
 #orderNowLink:hover {
-    color:white;
-    background-color: #a80000;
+    color:#a80000;
+    background-color: white;
+    transition: 400ms;
 }
 
 .hamburgerStack {
@@ -106,7 +112,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (max-width: 1005px) { 
+@media only screen and (max-width: 1100px) { 
     header {  
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
@@ -121,9 +127,13 @@ nav a:hover {
     }
 }
 
-@media screen and (max-width: 690px) { 
+@media screen and (max-width: 800px) { 
     nav {
         grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    nav a {
+        font-size: 1rem;
     }
 
     nav a:not(:first-child):not(:nth-child(2)) {
@@ -302,13 +312,14 @@ footer {
 }
 
 .sliderImg .sliderText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 1rem;
     width: 100%;
     height: fit-content;
     padding: 1rem 2rem 2rem 2rem;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid black;
 }
 
 .sliderImg div p {
@@ -318,17 +329,21 @@ footer {
 
 .sliderImg div div a {
     margin: 1rem;
+    font-size: 1.25rem;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
     color: white;
     background: #a80000;
     text-decoration: none;
+    border: 1px solid white;
+    transition: 400ms;
 }
 
 .sliderImg div div a:hover {
-    transition: 400ms;
+    color: #a80000;
     cursor: pointer;
-    background: #8d0000;
+    border: 1px solid #a80000;
+    background: white;
+    transition: 400ms;
 }
 
 .tacoTuesdayImg {
@@ -397,6 +412,10 @@ footer {
     .sliderImg .sliderText p {
         font-size: 1.25rem;
     }
+
+    .sliderImg div div a {
+        font-size: 1rem;
+    }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -455,8 +474,10 @@ a.infoContact p {
     }
     
     .infoCol p {
+        text-align: center;
         color: white;
         text-decoration: none;
+        margin-bottom: .2rem;
     }
 
     p.infoColTitle {
