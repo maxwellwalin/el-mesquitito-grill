@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <Hero />
       <HomepageInfo />
-      <ElfsightWidget widgetID="63057ee3-1444-420a-882e-55e79be0c228" />
+      <ElfsightWidget widgetID="63057ee3-1444-420a-882e-55e79be0c228" className="yelpReviews"/>
     </>
   )
 }

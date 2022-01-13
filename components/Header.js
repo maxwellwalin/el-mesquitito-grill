@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRouter } from "next/router"
 import Link from 'next/link'
 import { useState } from 'react';
-import * as ga from '../lib/ga'
 
 export default function Header() {
     const route = useRouter().pathname;
@@ -18,9 +17,7 @@ export default function Header() {
             setResponsiveClass(null)
         }
     }
-
     
-
     return (
         <header>
             <div className="headerLogo">

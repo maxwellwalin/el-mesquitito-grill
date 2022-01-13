@@ -514,8 +514,8 @@ a.infoContact p {
 /* YELP COMPONENT */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.yelpDiv {
-    padding: 2rem 0;
+.yelpReviews {
+    padding: 2rem;
     background-color: white;
     font-weight: bolder;
 }
