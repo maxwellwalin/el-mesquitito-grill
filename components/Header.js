@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRouter } from "next/router"
 import Link from 'next/link'
 import { useState } from 'react';
+import * as ga from '../lib/ga'
 
 export default function Header() {
     const route = useRouter().pathname;
@@ -18,6 +19,8 @@ export default function Header() {
         }
     }
 
+    
+
     return (
         <header>
             <div className="headerLogo">
@@ -30,27 +33,27 @@ export default function Header() {
                 <a href="/order" id="orderNowLink">
                     ORDER ONLINE
                 </a>
-                <a href="tel:9496452226">
+                <a href="tel:9496452226" id="callLink">
                     CALL
                 </a>
-                <a href="http://maps.apple.com/?q=el+mesquitito+grill+costa+mesa" target="_blank" rel="noreferrer">
+                <a href="http://maps.apple.com/?q=el+mesquitito+grill+costa+mesa" target="_blank" rel="noreferrer" id="directionsLink">
                     DIRECTIONS
                 </a>
                 <a href="/images/menu.pdf" style={{
                     textDecoration: route === '/menu' ? 'underline' : "",
                     textDecorationColor: route === '/menu' ? '#d80000' : "",
-                }} target="_blank" rel='noreferrer'>MENU</a>
+                }} target="_blank" rel='noreferrer' id="menuLink">MENU</a>
                 <Link href="/contact" passHref shallow>
                     <a style={{
                         textDecoration: route === '/contact' ? 'underline' : "",
                         textDecorationColor: route === '/contact' ? '#d80000' : "",
-                    }}>CONTACT</a>
+                    }} id='contactLink'>CONTACT</a>
                 </Link>
                 <Link href="/faq" passHref shallow>
                     <a style={{
                         textDecoration: route === '/faq' ? 'underline' : "",
                         textDecorationColor: route === '/faq' ? '#d80000' : "",
-                    }}>FAQ</a>
+                    }} id="faqLink">FAQ</a>
                 </Link>
             </nav>
             <div className='headerSocialIconContainer'>

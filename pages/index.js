@@ -1,6 +1,7 @@
 import Hero from "../components/Hero"
 import Head from 'next/head'
 import HomepageInfo from "../components/HomepageInfo"
+import { ElfsightWidget } from 'react-elfsight-widget'
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
       <Hero />
       <HomepageInfo />
-      <div className="elfsight-app-63057ee3-1444-420a-882e-55e79be0c228 yelpDiv" />
+      <ElfsightWidget widgetID="63057ee3-1444-420a-882e-55e79be0c228" />
     </>
   )
 }
