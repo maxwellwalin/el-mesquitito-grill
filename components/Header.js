@@ -27,11 +27,12 @@ export default function Header() {
             </div>
             <nav className={responsiveClass}>
                 <FontAwesomeIcon icon={faBars} className='hamburgerStack' onClick={openResponsiveNav}></FontAwesomeIcon>
-                <a href="/order" id="orderNowLink">
+                {/* switch IDs 
+                <a href="/order" id="callLink">
                     ORDER ONLINE
-                </a>
-                <a href="tel:9496452226" id="callLink">
-                    CALL
+                </a> */}
+                <a href="tel:9496452226" id="orderNowLink">
+                    CALL NOW
                 </a>
                 <a href="http://maps.apple.com/?q=el+mesquitito+grill+costa+mesa" target="_blank" rel="noreferrer" id="directionsLink">
                     DIRECTIONS

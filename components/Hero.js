@@ -8,10 +8,10 @@ export default function Hero() {
                 <div />
                 <div className='sliderText'>
                     <h2>Taco Tuesday</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis eligendi fugiat doloremque enim.</p>
+                    <p>Stop by every Tuesday for $1.50 carne asada, pollo, al pastor, and carnitas tacos!</p>
                     <div>
                         {new Date().getDay() === 2 &&
-                            <a href="/order" target="_blank" rel='noreferrer'>
+                            <a href="tel:9496452226" target="_blank" rel='noreferrer'>
                                 Order Now
                             </a>}
                         <a href="/images/menu.pdf" target="_blank" rel='noreferrer'>View Menu</a>
@@ -22,17 +22,17 @@ export default function Hero() {
                 <div />
                 <div className='sliderText'>
                     <h2>Sunday Brunch</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis eligendi fugiat doloremque enim.</p>
+                    <p>Come by on Sunday mornings for $5 breakfast burritos!</p>
                     <div>
                         {new Date().getDay() === 0 &&
-                            <a href="/order" target="_blank" rel='noreferrer'>
+                            <a href="tel:9496452226" target="_blank" rel='noreferrer'>
                                 Order Now
                             </a>}
                         <a href="/images/menu.pdf" target="_blank" rel='noreferrer'>View Menu</a>
                     </div>
                 </div>
             </div>
-            <div className='sliderImg happyHourImg'>
+            {/* <div className='sliderImg happyHourImg'>
                 <div />
                 <div className='sliderText'>
                     <h2>Happy Hour</h2>
@@ -52,7 +52,7 @@ export default function Hero() {
                         <a href="/images/menu.pdf" target="_blank" rel='noreferrer'>View Menu</a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </Carousel >
     )
 }
