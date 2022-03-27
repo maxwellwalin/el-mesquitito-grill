@@ -18,14 +18,14 @@ export default function Footer() {
             paddingTop: '0',
         }
         copyrightHome = {
-            backgroundColor : '#a80000',
+            backgroundColor: '#a80000',
         }
     }
 
     return (
         <>
-            <footer style={emptyFooter}>
-                <div className="footerCol" style={disappearingStyle}>
+            <footer style={ emptyFooter }>
+                <div className="footerCol" style={ disappearingStyle }>
                     <p className="footerColTitle">LOCATION</p>
                     <a href="http://maps.apple.com/?q=el+mesquitito+grill+costa+mesa" target="_blank" rel="noreferrer">
                         <p>2590 NEWPORT BLVD</p>
@@ -33,9 +33,9 @@ export default function Footer() {
                         <p>COSTA MESA, CA 92627</p>
                     </a>
                 </div>
-                <div className="footerCol" style={disappearingStyle}>
+                <div className="footerCol" style={ disappearingStyle }>
                     <p className="footerColTitle">GET IN TOUCH</p>
-                    <a href="tel:9496452226">
+                    <a href="tel:9496452226" style={ { textAlign: "center" } }>
                         <p>(949) 645-2226</p>
                     </a>
                     <a href="mailto:elmesquititogrill@gmail.com">
@@ -43,24 +43,24 @@ export default function Footer() {
                     </a>
                     <div className='footerSocialIconContainer'>
                         <a href="https://www.instagram.com/elmesquititogrill/?hl=en" target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faInstagram} className='footerSocialIcon footerInstagram'></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={ faInstagram } className='footerSocialIcon footerInstagram'></FontAwesomeIcon>
                         </a>
                         <a href="https://www.facebook.com/El-Mesquitito-Grill-114394127084816/" target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faFacebook} className='footerSocialIcon footerFacebook'></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={ faFacebook } className='footerSocialIcon footerFacebook'></FontAwesomeIcon>
                         </a>
                         <a href="https://www.yelp.com/biz/el-mesquitito-grill-costa-mesa" target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faYelp} className='footerSocialIcon footerYelp'></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={ faYelp } className='footerSocialIcon footerYelp'></FontAwesomeIcon>
                         </a>
                     </div>
                 </div>
-                <div className="footerCol" style={disappearingStyle}>
+                <div className="footerCol" style={ disappearingStyle }>
                     <p className="footerColTitle">HOURS</p>
                     <p>MON-SAT: 9 AM - 8 PM</p>
                     <p>SUN: 9 AM - 5 PM</p>
                 </div>
             </footer>
-            <div className="copyright" style={copyrightHome}>
-                &copy;{year} El Mesquitito Grill. All Rights Reserved.
+            <div className="copyright" style={ copyrightHome }>
+                &copy;{ year } El Mesquitito Grill. All Rights Reserved.
             </div>
         </>
     )

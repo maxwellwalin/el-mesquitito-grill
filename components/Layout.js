@@ -7,8 +7,8 @@ export default function Layout({ children }) {
         <>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-                <meta name="description" content="El Mesquitito Grill is Costa Mesa's best Mexican restaurant. Stop by for reasonably priced, authentic, and delicious mexican food." />
-                <meta property="og:description" content="El Mesquitito Grill is Costa Mesa's best Mexican restaurant. Stop by for reasonably priced, authentic, and delicious mexican food." />
+                <meta name="description" content="El Mesquitito Grill is Costa Mesa's best and highest-rated Mexican restaurant. Stop by for reasonably priced, authentic, and delicious mexican food." />
+                <meta property="og:description" content="El Mesquitito Grill is Costa Mesa's best and highest-rated Mexican restaurant. Stop by for reasonably priced, authentic, and delicious mexican food." />
                 <meta property="og:type" content="website" />
                 <link rel="icon" href="/images/logo-square.jpg" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,7 @@ export default function Layout({ children }) {
                 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet" />
             </Head>
             <Header />
-            <main>{children}</main>
+            <main>{ children }</main>
             <Footer />
         </>
     )

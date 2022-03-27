@@ -21,9 +21,9 @@ export default function Header() {
     return (
         <header>
             <div className="headerLogo">
-                <a href="/">
+                <Link href="/">
                     <img src='./images/logo-rectangle-bq.jpg' alt='el mesquitito grill logo with authentic mexican grill phrase and black tree imagery' />
-                </a>
+                </Link>
             </div>
             <nav className={ responsiveClass }>
                 <FontAwesomeIcon icon={ faBars } className='hamburgerStack' onClick={ openResponsiveNav }></FontAwesomeIcon>
