@@ -2,15 +2,21 @@
 /* GLOBAL STYLES */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
-*, *:before, *:after {
-    font-family: 'Spectral', serif;
+*,
+*:before,
+*:after {
+    font-family: "Spectral", serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
 html {
     border: 3px solid #a80000;
+}
+
+#__next {
+    background-color: #fefefe;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -20,7 +26,6 @@ html {
 header {
     display: grid;
     width: 100%;
-    background-color: white;
     border-bottom: 3px solid #a80000;
     grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
@@ -29,8 +34,8 @@ header {
 
 .headerSocialIcon {
     color: black;
-    height: 2rem!important;
-    width: 2rem!important;
+    height: 2rem !important;
+    width: 2rem !important;
     margin: 0 1rem;
 }
 
@@ -41,7 +46,14 @@ header {
 }
 
 .headerInstagram:hover {
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+        radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+        linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
     border-radius: 10px;
     color: white;
 }
@@ -57,10 +69,8 @@ header {
 
 nav {
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    align-items: center;
-    justify-items: end;
+    display: flex;
+    justify-content: space-evenly;
     font-weight: bold;
 }
 
@@ -87,7 +97,7 @@ nav a:hover {
 }
 
 #orderNowLink:hover {
-    color:#a80000;
+    color: #a80000;
     background-color: white;
     transition: 400ms;
 }
@@ -98,8 +108,8 @@ nav a:hover {
     height: 1.75rem;
 }
 
-@media only screen and (max-width: 1650px) { 
-    header {  
+@media only screen and (max-width: 1650px) {
+    header {
         grid-template-columns: 1fr 3fr;
     }
 
@@ -112,8 +122,8 @@ nav a:hover {
     }
 }
 
-@media only screen and (max-width: 1100px) { 
-    header {  
+@media only screen and (max-width: 1100px) {
+    header {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
     }
@@ -127,8 +137,9 @@ nav a:hover {
     }
 }
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px) {
     nav {
+        display: grid;
         grid-template-columns: 1fr 2fr 1fr;
     }
 
@@ -149,7 +160,7 @@ nav a:hover {
 
 @media screen and (max-width: 690px) {
     nav.responsive {
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
         margin-bottom: 0;
     }
 
@@ -216,8 +227,8 @@ footer {
 
 .footerSocialIcon {
     color: white;
-    height: 2rem!important;
-    width: 2rem!important;
+    height: 2rem !important;
+    width: 2rem !important;
     margin: 1rem 0.5rem 0 0.5rem;
 }
 
@@ -228,7 +239,14 @@ footer {
 }
 
 .footerInstagram:hover {
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+        radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+        linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
     border-radius: 14px;
     color: white;
 }
@@ -246,8 +264,8 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width: 690px) { 
-    footer {  
+@media only screen and (max-width: 690px) {
+    footer {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
     }
@@ -261,7 +279,7 @@ footer {
         color: white;
         text-decoration: none;
     }
-    
+
     .footerCol p {
         color: white;
         text-decoration: none;
@@ -274,8 +292,8 @@ footer {
     }
 }
 
-@media only screen and (max-width: 900px) { 
-    footer {  
+@media only screen and (max-width: 900px) {
+    footer {
         font-size: 1rem;
         padding-top: 2rem;
     }
@@ -285,7 +303,7 @@ footer {
     }
 
     .copyright {
-        font-size: .75rem;
+        font-size: 0.75rem;
     }
 }
 
@@ -346,19 +364,19 @@ footer {
 }
 
 .tacoTuesdayImg {
-    background-image: url('https://dailytaco.com/wp-content/uploads/2021/11/Home-Tacos-1024x683.jpg');
+    background-image: url("https://dailytaco.com/wp-content/uploads/2021/11/Home-Tacos-1024x683.jpg");
 }
 
 .happyHourImg {
-    background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/USe0z9dejT2Ht1APMc6sgw/o.jpg');
+    background-image: url("https://s3-media0.fl.yelpcdn.com/bphoto/USe0z9dejT2Ht1APMc6sgw/o.jpg");
 }
 
 .sundayBrunchImg {
-    background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/wMorUD3lTmf7cgmX8X4XPA/o.jpg');
+    background-image: url("https://s3-media0.fl.yelpcdn.com/bphoto/wMorUD3lTmf7cgmX8X4XPA/o.jpg");
 }
 
 .fourthPromotionImg {
-    background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/JDCgYj6LkFAsuXFYBSq6Cg/o.jpg');
+    background-image: url("https://s3-media0.fl.yelpcdn.com/bphoto/JDCgYj6LkFAsuXFYBSq6Cg/o.jpg");
 }
 
 @keyframes slider {
@@ -424,7 +442,7 @@ footer {
 .homepageInfo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color:black;
+    background-color: black;
     justify-items: center;
     color: white;
     text-align: end;
@@ -448,16 +466,16 @@ footer {
     text-align: center;
     border-bottom: 2px solid white;
     font-size: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 a.infoContact p {
     text-align: center;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 750px) { 
-    .homepageInfo {  
+@media only screen and (max-width: 750px) {
+    .homepageInfo {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
     }
@@ -471,12 +489,12 @@ a.infoContact p {
         color: white;
         text-decoration: none;
     }
-    
+
     .infoCol p {
         text-align: center;
         color: white;
         text-decoration: none;
-        margin-bottom: .2rem;
+        margin-bottom: 0.2rem;
     }
 
     p.infoColTitle {
@@ -486,12 +504,12 @@ a.infoContact p {
     }
 }
 
-@media only screen and (max-width: 1200px) { 
+@media only screen and (max-width: 1200px) {
     .homepageInfo {
         padding: 3rem 0;
     }
 
-    .infoCol p {  
+    .infoCol p {
         font-size: 1.5rem;
     }
 
@@ -500,12 +518,12 @@ a.infoContact p {
     }
 }
 
-@media only screen and (max-width: 900px) { 
+@media only screen and (max-width: 900px) {
     .homepageInfo {
         padding: 2rem 0;
     }
 
-    .infoCol p {  
+    .infoCol p {
         font-size: 1.25rem;
     }
 }
@@ -516,7 +534,6 @@ a.infoContact p {
 
 .yelpReviews {
     padding: 2rem;
-    background-color: white;
     font-weight: bolder;
 }
 
@@ -524,7 +541,10 @@ a.infoContact p {
 /* CONTACT PAGE */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
-form { max-width:420px; margin:2rem auto 3rem auto; }
+form {
+    max-width: 420px;
+    margin: 2rem auto 3rem auto;
+}
 
 form h1 {
     text-align: center;
@@ -532,46 +552,52 @@ form h1 {
 }
 
 .feedback-input {
-  color:black;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #a80000;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #a80000;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
 }
 
-.feedback-input:focus { border:2px solid #CC4949; }
+.feedback-input:focus {
+    border: 2px solid #cc4949;
+}
 
 textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
 }
 
 [type="submit"] {
-  width: 100%;
-  background:#a80000;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+    width: 100%;
+    background: #a80000;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
 }
-[type="submit"]:hover { background:#8f0000; }
+[type="submit"]:hover {
+    background: #8f0000;
+}
 
 @media screen and (max-width: 480px) {
-    form { max-width: 325px; }
+    form {
+        max-width: 325px;
+    }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////*/

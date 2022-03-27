@@ -17,7 +17,7 @@ export default function Header() {
             setResponsiveClass(null)
         }
     }
-    
+
     return (
         <header>
             <div className="headerLogo">
@@ -25,8 +25,8 @@ export default function Header() {
                     <img src='./images/logo-rectangle-bq.jpg' alt='el mesquitito grill logo with authentic mexican grill phrase and black tree imagery' />
                 </a>
             </div>
-            <nav className={responsiveClass}>
-                <FontAwesomeIcon icon={faBars} className='hamburgerStack' onClick={openResponsiveNav}></FontAwesomeIcon>
+            <nav className={ responsiveClass }>
+                <FontAwesomeIcon icon={ faBars } className='hamburgerStack' onClick={ openResponsiveNav }></FontAwesomeIcon>
                 {/* switch IDs 
                 <a href="/order" id="callLink">
                     ORDER ONLINE
@@ -37,32 +37,32 @@ export default function Header() {
                 <a href="http://maps.apple.com/?q=el+mesquitito+grill+costa+mesa" target="_blank" rel="noreferrer" id="directionsLink">
                     DIRECTIONS
                 </a>
-                <a href="/images/menu.pdf" style={{
+                <a href="/images/menu.pdf" style={ {
                     textDecoration: route === '/menu' ? 'underline' : "",
                     textDecorationColor: route === '/menu' ? '#d80000' : "",
-                }} target="_blank" rel='noreferrer' id="menuLink">MENU</a>
-                <Link href="/contact" passHref shallow>
+                } } target="_blank" rel='noreferrer' id="menuLink">MENU</a>
+                {/* <Link href="/contact" passHref shallow>
                     <a style={{
                         textDecoration: route === '/contact' ? 'underline' : "",
                         textDecorationColor: route === '/contact' ? '#d80000' : "",
                     }} id='contactLink'>CONTACT</a>
-                </Link>
+                </Link> */}
                 <Link href="/faq" passHref shallow>
-                    <a style={{
+                    <a style={ {
                         textDecoration: route === '/faq' ? 'underline' : "",
                         textDecorationColor: route === '/faq' ? '#d80000' : "",
-                    }} id="faqLink">FAQ</a>
+                    } } id="faqLink">FAQ</a>
                 </Link>
             </nav>
             <div className='headerSocialIconContainer'>
                 <a href="https://www.instagram.com/elmesquititogrill/?hl=en" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} className='headerSocialIcon headerInstagram'></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={ faInstagram } className='headerSocialIcon headerInstagram'></FontAwesomeIcon>
                 </a>
                 <a href="https://www.facebook.com/El-Mesquitito-Grill-114394127084816/" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faFacebook} className='headerSocialIcon headerFacebook'></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={ faFacebook } className='headerSocialIcon headerFacebook'></FontAwesomeIcon>
                 </a>
                 <a href="https://www.yelp.com/biz/el-mesquitito-grill-costa-mesa" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faYelp} className='headerSocialIcon headerYelp'></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={ faYelp } className='headerSocialIcon headerYelp'></FontAwesomeIcon>
                 </a>
             </div>
         </header >
