@@ -6,7 +6,8 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <meta name="description" content="El Mesquitito Grill is Costa Mesa's best and highest-rated Mexican restaurant. Stop by for reasonably priced, authentic, and delicious mexican food." />
-          <meta name="image" property="og:image" content="https://www.elmesquititogrill.com/images/logo-square.jpg" />
+          <meta property="og:image" content="https://www.elmesquititogrill.com/images/logo-square.jpg" />
+          <meta property="og:image:secure_url" content="https://www.elmesquititogrill.com/images/logo-square.jpg" />
           <meta property="og:description" content="El Mesquitito Grill is Costa Mesa's best and highest-rated Mexican restaurant. Stop by for reasonably priced, authentic, and delicious mexican food." />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="en_US" />

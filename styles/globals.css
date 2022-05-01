@@ -317,6 +317,7 @@ footer {
 .sliderImg div h2 {
     font-weight: bolder;
     font-size: 3rem;
+    margin-bottom: 0;
 }
 
 .sliderImg .sliderText {
@@ -331,11 +332,18 @@ footer {
 
 .sliderImg div p {
     font-size: 1.5rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0;
 }
 
-.sliderImg div div a {
-    margin: 1rem;
+.sliderBtns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderBtns a {
+    margin: 0.5rem 1rem 0 1rem;
     font-size: 1.25rem;
     padding: 0.5rem 1rem;
     color: white;
@@ -345,7 +353,7 @@ footer {
     transition: 400ms;
 }
 
-.sliderImg div div a:hover {
+.sliderBtns a:hover {
     color: #a80000;
     cursor: pointer;
     border: 1px solid #a80000;
